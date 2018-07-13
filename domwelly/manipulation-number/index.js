@@ -1,19 +1,18 @@
-console.log("Manipulation Number");
+
+console.log(" Manipulation Number");
 
 const title = document.getElementById("title")
-
 const output = document.getElementById("output-number")
 
-const getnumber = () => {
-    const numberfirst = document.getElementById("number-first").value
-    const numbersecond = document.getElementById("number-second").value
+const getNumbers = () => {
+    const numberFirst = document.getElementById("number-first").value
+    const numberSecond = document.getElementById("number-second").value
 
+    console.log("numberFirst:", numberFirst);
+    console.log("numberSecond:", numberSecond);
 
-console.log("numberfirst:", numberfirst);
-console.log("numbersecond:", numbersecond);
-
-output.innerText = `
-First Number : ${numberfirst}
-Second Number : ${numbersecond}
-`
+    output.innerText = `
+    First Number: ${numberFirst}
+    Second Number: ${numberSecond}
+    `
 }
