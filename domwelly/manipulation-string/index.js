@@ -4,26 +4,28 @@ const title = document.getElementById("title")
 const output = document.getElementById("output-string")
 const result = document.getElementById("button-btn")
 
-const add = () => {
-    const firstName = document.getElementById("firstname").value
-    const lastName = document.getElementById("lastname").value
-    const Birthday = document.getElementById("birthday").value
-    const Address = document.getElementById("address").value
-    const Email = document.getElementById("email").value
-    const Phone = document.getElementById("phone").value
+const callname  = [`${Name1}`, `${Name2}`, `${Name3}`, `${Name4}`];
+document.getElementById("butto-btn").innerHTML = callname;
 
-    console.log("Name : ", firstName, lastName);
-    console.log("Date of Birthday: ", Birthday);
-    console.log("Address: ", Address);
-    console.log("Email: ", Email);
-    console.log("Phone: ", Phone);
+function Fungsi(){
+    callname.sort();
+    document.getElementById("button-btn").innerHTML = callname;
+}
 
-    output.innerText = `Name : ${firstName} ${lastName}
-    Date of Birthday : ${Birthday}
-    Address : ${Address}
-    Email : ${Email} 
-    Phone : ${Phone}`
+
+const getName = () => {
+    const Name1 = document.getElementById("name1").value
+    const Name2 = document.getElementById("name2").value
+    const Name3 = document.getElementById("name3").value
+    const Name4 = document.getElementById("name4").value
+
+
+
+    output.innerText = `Name1 : ${Name1}
+    Name2 : ${Name2}
+    Name3 : ${Name3}
+    Name4 : ${Name4}`
 
 }
 
-result.addEventListener('click', add);
+result.addEventListener('click', getName);
