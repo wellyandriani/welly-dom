@@ -1,0 +1,33 @@
+.container{
+    padding: 10px 50px;
+}
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.form-control{
+    display: block;
+    width: 30%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.btn{
+    width: 50px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    background-color: black;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+
